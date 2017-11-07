@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$("div").children("a").hide().prev("span").click(function(){
+				$(this).nextAll("a").toggle().parent().siblings("div").find("a").hide();		
+			});
+		});
+		
+		
+	</script>
+	
+	<style type="text/css">
+		div *{
+			display:block;
+			width:200px;
+		}
+		div span{
+			background-color : #0f0;
+		}
+	</style>
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"8123",secure:"8124"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-5" data-genuitec-path="/jquery_02/WebRoot/2.筛选案例/2.QQ用户分组.html">
+	
+		<div data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-5" data-genuitec-path="/jquery_02/WebRoot/2.筛选案例/2.QQ用户分组.html">
+			<span>aaa</span>
+			<a>a1</a>
+			<a>a2</a>
+			<a>a3</a>
+		</div>
+		<div>
+			<span>bbb</span>
+			<a>b1</a>
+			<a>b2</a>
+			<a>b3</a>
+		</div>
+		<div>
+			<span>ccc</span>
+			<a>c1</a>
+			<a>c2</a>
+			<a>c3</a>
+		</div>
+		
+</body>
+</html>
